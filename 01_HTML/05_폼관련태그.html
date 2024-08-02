@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 관련 태그</title>
+</head>
+<body>
+    <h2>폼 관련 태그</h2>
+
+    <form method="get" autocomplete="on" >
+        <fieldset>
+            <legend>회원 기본 정보 </legend>
+
+            <label for="userId">아이디 : </label>
+            <input type="text" name="userId" id="userId"
+                placeholder="아이디를 입력해주세요." autocomplete="off" required autofocus>
+
+            <br><br>
+
+            <label for="userPwd">비밀번호 : </label>
+            <input type="password" name="userPwd" id="userPwd"
+                placeholder="비밀번호를 입력해주세요.">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>배송 정보</legend>
+            
+            <label for="userName">수령인 : </label>
+            <input type="text" name="userName" id="userName">
+            
+            <br><br>
+
+            <label for="address">주소 : </label>
+            <input type="text" name="address" id="address">
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="회원가입">
+        <input type="reset" value="초기화">
+    </form>
+</body>
+</html>
