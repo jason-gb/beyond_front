@@ -1,0 +1,142 @@
+/* font-family */
+/* 
+body {
+    font-family: "hack";
+} 
+*/
+
+#ff1 {
+    font-family: "궁서체";
+}
+
+#ff2 {
+    font-family: "굴림체";
+}
+
+#ff3 { 
+    font-family: "없는글꼴", "hack";
+}
+
+/* font-size */
+#size1 {
+    /* font-size: 30px; */
+    font-size: 20pt;
+}
+
+#size2 {
+    font-size: 2em;
+}
+
+#size2>span {
+    /* font-size: 1em; */
+    font-size: 1rem;
+}
+
+#size3 {
+    /* font-size: 50%; */
+    font-size: .5em;
+}
+
+/* font-weight */
+#fw1 {
+    /* font-weight: 700; */
+    font-weight: bold;
+}
+
+#fw2 {
+    font-weight: lighter;
+}
+
+#fw3 {
+    font-weight: bolder;
+}
+
+/* font-style */
+#fs1 {
+    font-style: italic;
+}
+
+#fs2 {
+    font-style: oblique;
+}
+
+/* color */
+#c-name {
+    color: steelblue;
+}
+
+#c-16 {
+    /* color: #44ffee; */
+    color: #4fe;
+}
+
+#c-rgb {
+    /* color: rgb(255, 0, 255); */
+    color: rgba(255, 0, 255, .3);
+}
+
+#c-hsl {
+    /* color: hsl(360, 100%, 50%); */
+    color: hsla(360, 100%, 50%, .6);
+}
+
+/* text-decoration */
+#td1 {
+    text-decoration: overline;
+}
+
+#td2 {
+    text-decoration: line-through;
+}
+
+#td3 {
+    text-decoration: underline;
+}
+
+/* white-space */
+#whs {
+    border: 1px solid;
+    width: 200px;
+    /* white-space: normal; */
+    /* white-space: nowrap; */
+    /* white-space: pre; */
+    /* white-space: pre-line; */
+    white-space: pre-wrap;
+}
+
+/* letter-spacing / word-spacing */
+#ws {
+    /* letter-spacing: 10px; */
+    /* letter-spacing: 1em; */
+    /* word-spacing: 10px; */
+    word-spacing: 2em;
+}
+
+/* text-align */
+#ta {
+    /* text-align: left; */
+    /* text-align: right; */
+    /* text-align: center; */
+    text-align: justify;
+}
+
+/* text-indent */
+#ti {
+    /* text-indent: 10px; */
+    text-indent: 1em;
+}
+
+/* line-height */
+#lh {
+    /* line-height: 40px; */
+    line-height: 2em;
+}
+
+/* text-overflow */
+#to {
+    width: 500px;
+    background-color: beige;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,152 @@
+/* 
+* {
+    color: green;
+} 
+*/
+
+/* 속성 선택자 */
+/* 
+div[name] {
+    background-color: orange;
+} 
+*/
+
+div[name=name1] {
+    background-color: orange;
+}
+
+div[name~=name1] {
+    background-color: yellow;
+}
+
+div[class|=class] {
+    background-color: aqua;
+}
+
+div[name^=name] {
+    background-color: blue;
+}
+
+div[class$=class] {
+    color: white;
+}
+
+div[class*=i] {
+    background-color: greenyellow;
+    color: orange;
+}
+
+/* 자식 선택자와 후손 선택자 */
+#test1>h4 {
+    background-color: orange;
+}
+
+#test1>ul>h4 {
+    background-color: purple;
+}
+
+#test1>ul>li {
+    background-color: green;
+}
+
+#test1 h4 {
+    color: white;
+}
+
+#test1 li {
+    color: red;
+}
+
+/* 형제 선택자 */
+#test2+div {
+    background-color: yellowgreen;
+}
+
+/* #test2~div {  */
+#test2+div~div { 
+    background-color: orangered;
+}
+
+/*  반응 선택자 */
+#active-test, #hover-test {
+    background-color: yellowgreen;
+    width: 300px;
+    height: 300px;
+}
+
+#active-test:active {
+    background-color: yellow;
+    color: red;
+}
+
+#hover-test:hover {
+    background-color: hotpink;
+    color: white;
+    cursor: pointer;
+}
+
+/* #userId:focus, #userPwd:focus { */
+input[name^=user]:focus {
+    border: 4px solid red;
+}
+
+/* 상태 선택자 */
+input[type=checkbox]:checked {
+    width: 20px;
+    height: 20px;
+}
+
+input[type=checkbox]:checked+label {
+    font-size: 1.5em;
+}
+
+button:enabled {
+    border: 2px solid yellowgreen;
+    background-color: yellowgreen;
+}
+
+button:enabled:active {
+    border: 2px solid green;
+    background-color: green;
+}
+
+button:disabled {
+    background-color: gray;
+    color: white;
+}
+
+/* 구조 선택자 */
+/* 형제 관계 태그 중 첫 번째 태그 선택 */
+/* #test3 p:first-child { */
+#test3 p:first-of-type {
+    background-color: red;
+    color: white;
+}
+
+/* 형제 관계 태그 중 마지막 태그 선택 */
+/* #test3 p:last-child { */
+#test3 p:last-of-type {
+    background-color: orange;
+    color: white;
+}
+
+/* 형제 관계 태그 중 수열 번째 태그 선택 */
+/* #test3 p:nth-child(2) { */
+/* #test3 p:nth-of-type(2) { */
+/* #test3 p:nth-of-type(2n + 1) { */
+/* #test3 p:nth-of-type(odd) { */
+/* #test3 p:nth-of-type(even) { */
+#test3 p:nth-last-child(4) {
+/* #test3 p:nth-last-of-type(4) { */
+    background-color: yellowgreen;
+    color: white;
+}
+
+/* 부정 선택자 */
+/* #test4 p:not(.p) { */
+/* #test4 p:not(:last-child) { */
+/* #test4 p:not(:nth-child(even)) { */
+#test4 p:not(:nth-child(odd)) {
+    background-color: aquamarine;
+    color: chocolate;
+}

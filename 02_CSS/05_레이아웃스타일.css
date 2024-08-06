@@ -1,0 +1,174 @@
+/* 박스 모델 */
+/* display */
+.display-inline {
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    display: inline;
+}
+
+.display-block {
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    display: block;
+}
+
+.display-inline-block {
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+}
+
+/* padding */
+#padding {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    /* 네 방향 모두 */
+    /* padding: 10px; */
+    /* padding-left: 30px; */
+    /* padding-right: 20px; */
+    /* padding-top: 50px; */
+    /* padding-bottom: 20px; */
+    /* 상/하 : 50px, 좌/우 : 100px */
+    /* padding: 50px 100px; */
+    /* 상 : 30px, 우 : 50px, 하 : 30px, 좌 : 50px */
+    padding: 30px 50px 30px 50px;
+}
+
+/* margin */
+#margin1 {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    /* 네 방향 모두 */
+    margin: 50px;
+}
+
+#margin2 {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    margin: 30px 50px 30px 50px;
+    /* 
+    border-style: dashed;
+    border-top-width: 5px;
+    border-bottom-width: 10px;
+    border-top-color: blueviolet;
+    border-bottom-color: greenyellow; 
+    */
+    border: 2px solid rebeccapurple;
+}
+
+/* 포지셔닝 */
+/* float, clear */
+.float {
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+
+/* position */
+#outer {
+    /* display: none; */
+    /* visibility: hidden; */
+    position: relative;
+    left: 10px;
+    top: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+}
+
+#first {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+}
+
+#second {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#fixed {
+    /* position: fixed; */
+    position: sticky;
+    top: 50px;
+    left: 500px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+/* visibility */
+.visibility {
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+#visibility1 {
+    background-color: pink;
+}
+
+#visibility2 {
+    /* display: none; */
+    visibility: hidden;
+    background-color: beige;
+}
+
+#visibility3 {
+    background-color: skyblue;
+}
+
+/* z-index */
+#z-outer {
+    position: relative;
+}
+
+.z-index {
+    border: 1px solid;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+}
+
+#z-index1 {
+    top: 100px;
+    left: 100px;
+    background-color: orange;
+    z-index: 5;
+}
+
+#z-index2 {
+    top: 50px;
+    left: 50px;
+    background-color: blueviolet;
+    z-index: 4;
+}
+
+#z-index3 {
+    background-color: green;
+    z-index: 9999;
+}
