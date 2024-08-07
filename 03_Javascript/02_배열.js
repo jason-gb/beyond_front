@@ -39,5 +39,17 @@ window.onload = function() {
         div1.innerHTML += `value : ${value}, type : ${typeof(value)}<br>`;
        }
 
+       // 2. 배열의 메소드
+       let btn2 = document.getElementById('btn2');
+
+       btn2.addEventListener('click', function(){
+            let div2 = document.getElementById('div2');
+
+            // 1) indexOf()
+            let array = ['귤','사과','자몽','망고','복숭아'];
+
+            div2.innerHTML += `array: [${array}]<br>`;
+       });
+
     });
 }
