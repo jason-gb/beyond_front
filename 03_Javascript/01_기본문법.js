@@ -197,6 +197,44 @@ function opTest() {
 // 5. 제어문
 function forTest(){
     let div4 = document.getElementById('div4');
+    let array = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+    let user = {
+        name: '홍길동',
+        age: '43',
+        height: '175.8'
+    };
 
-    div4.innerHTML += '출력 테스트';
+    // for 구문
+    // for(let i = 0; i < array.length; i++){
+    //     div4.innerHTML += `${array[i]}`;
+    // }
+
+    // for in 구문
+    // 배열의 경우 반복 변수에 array의 index 값을 순서대로 담아서 반복한다.
+    // for (const i in array) {
+    //     div4.innerHTML += `${array[i]}`;
+    // }
+
+    // for of 구문
+    // 배열의 경우 반복 변수에 array의 value 값의 순서대로 담아서 반복한다.
+    for (const value of array) {
+        div4.innerHTML += `${value}`;
+    }
+
+    div4.innerHTML += '<br><br>';
+
+    // for in 구문
+    // 객체의 경우 반복 변수에 user의 속성명을 key에 순서대로 담아서 반복한다.
+    for (const key in user) {
+        div4.innerHTML += `key : ${key}, type :${typeof(key)}, value:${user[key]}<br>`;
+    }
+
+    // for of 구문
+    // 객체의 경우 for of 구문을 사용할 수 없다.
+    for (const value in user) {
+        console.log(value);
+    }
+
+
+
 }
