@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM(Document Object Model)</title>
+    <style>
+        .area {
+            border: 1px solid;
+            width: 600px;
+            height: 300px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 1.5em;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h2>DOM(Document Object Model)</h2>
+
+    <h3>1. 노드 조회</h3>
+    <h4>1) id로 검색</h4>
+
+    <div id="div1" class="area"></div>
+    <button id="btn1">실행 확인</button>
+
+    <h4>2) 태그 명으로 검색</h4>
+
+    <ul>
+        <li>목록1</li>
+        <li>목록2</li>
+        <li>목록3</li>
+        <li>목록4</li>
+        <li>목록5</li>
+    </ul>
+    <button id="btn2">실행 확인</button>
+
+    <h4>3) name으로 검색</h4>
+    <form>
+        <fieldset>
+            <legend>취미</legend>
+            <label><input type="checkbox" name="hobby" value="game">게임</label>
+            <label><input type="checkbox" name="hobby" value="music">음악 감상</label>
+            <label><input type="checkbox" name="hobby" value="movie">영화 감상</label>
+        </fieldset>
+    </form>
+    <div id="div2" class="area"></div>
+    <button id="btn3">실행 확인</button>
+
+    <h4>4) class로 검색</h4>
+    
+    <button id="btn4">실행 확인</button>
+    
+    <h4>5) CSS선택자로 검색</h4>
+    
+    <button id="btn5">실행 확인</button>
+
+    <h3>2. 노드 생성</h3>
+    <h4>1) 텍스트 노드가 있는 요소 노드 생성</h4>
+
+    <div id="div3" class="area"></div>
+    <button id="btn6">실행 확인</button>
+
+    <script src="./06_DOM.js"></script>
+    
+    <h4>2) 텍스트 노드가 없는 요소 노드 생성</h4>
+
+    <div id="div4" class="area"></div>
+    <button id="btn7">실행 확인</button>
+    
+    <h3>3. 노드 삭제</h3>
+    
+    <div id="div5" class="area"></div>
+    <button id="btn8">실행 확인</button>
+
+    <script src="./06_DOM.js"></script>
+</body>
+</html>

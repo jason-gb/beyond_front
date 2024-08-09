@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM(Browser Object Model)</title>
+    <style>
+        .area {
+            border: 1px solid;
+            width: 600px;
+            height: 300px;
+            margin-bottom: 5px;
+            font-size: 1.5em;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h2>BOM(Browser Object Model)</h2>
+
+    <h3>1. window 객체</h3>
+    <p>
+        window 객체는 브라우저 전체를 담당하는 최상위 객체이며, 
+        브라우저 내의 모든 요소들과 객체들을 포함한다.
+    </p>
+
+    <h4>1) window.open()</h4>
+
+    <button id="btn1">실행 확인</button>
+   
+    <h4>2) window.setTimeout()</h4>
+
+    <p>
+        일정 시간이 경과된 이후에 매개값으로 전달된 콜백 함수를 단 한번만 실행한다.
+    </p>
+
+    <button id="btn2">실행 확인</button>
+    
+    <h4>3) window.setInterval()</h4>
+
+    <p>
+        일정 시간이 경과된 이후에 매개값으로 전달된 콜백 함수를 반복해서 실행한다.
+    </p>
+
+    <div id="div1" class="area"></div>
+
+    <button id="btnStart">실행</button> <button id="btnStop">종료</button>
+
+    <h3>2. location 객체</h3>
+    
+    <h4>1) location.reload()</h4>
+    <p>
+       페이지를 새로 고침하는 메소드이다.
+    </p>
+
+    <button onclick="location.reload();">새로고침</button>
+    <button onclick="location.href = location.href">새로고침</button>
+    <button onclick="location = location">새로고침</button>
+    
+    <h4>2) location.href()</h4>
+    <p>
+        현제 페이지의 URL 주소를 가지고 있는 속성으로
+        해당 속성 값을 변경해서 페이지를 이동할 수 있다.
+    </p>
+    
+    <button onclick="location.href = 'https://www.naver.com';">네이버로 이동</button>
+    <button onclick="location = 'https://www.naver.com';">네이버로 이동</button>
+    
+    <h4>3) location.assign() , location.replace()</h4>
+    <p>
+        두 메소드 모두 페이지를 이동시키지만 replace()는 history에 기록되지 않는다.
+    </p>
+
+    <button onclick="location.assign('https://www.google.com')">구글로 이동</button>
+    <button onclick="location.replace('https://www.google.com')">구글로 이동</button>
+
+    <h3>3. history 객체</h3>
+    <p>
+        브라우저에서 이동한 문서의 내역을 관리하는 객체이다.
+    </p>
+
+    <button onclick="history.back()">뒤로 가기</button>
+    <button onclick="history.forward()">앞으로 가기</button>
+
+    <script src="./05_BOM.js"></script>
+</body>
+</html>

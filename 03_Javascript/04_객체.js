@@ -265,7 +265,7 @@ window.onload = () => {
         console.log(user);
         
         // JSON.stringify()
-        //  - 자바스크립트 객체를 문자열로 변환하는 메소드이다.
+        //  - 자바스크립트 객체를 JSON 문자열로 변환하는 메소드이다.
         let str = JSON.stringify(user);
 
         console.log(str);

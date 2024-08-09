@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+</head>
+<body>
+    <h2>이벤트</h2>
+
+    <h3>1. 이벤트 핸들러 등록</h3>
+    <h4>1) 인라인 방식</h4>
+
+    <button onclick="eventTest();">실행 확인</button>
+
+    <h4>2) 프로퍼티 방식</h4>
+
+    <button id="btn1">실행 확인</button>
+    
+    <h4>3) 메소드 방식</h4>
+    
+    <button id="btn2">실행 확인</button>
+
+    <h3>2. 태그별 기본 이벤트</h3>
+
+    <h4>1) 기본 이벤트 제거 1</h4>
+    
+    <a href="https://www.naver.com" onclick="return false">네이버 바로가기</a>
+
+    <a href="https://www.naver.com" onclick="return eventTest2();">네이버 바로가기</a>
+
+    <script>
+        function eventTest2() {
+            if(!confirm('네이버로 이동하시겠습니까?')){
+                return false;
+            }
+        }
+    </script>
+
+    <h4>2) 기본 이벤트 제거 2</h4>
+    <form>
+    <!-- <form onsubmit="return passwordCheck();"> -->
+        <label for="password1">비밀번호 입력 : </label>
+        <input type="password" name="password" id="password1">
+
+        <br><br>
+
+        <label for="password2">비밀번호 확인 : </label>
+        <input type="password" id="password2">
+
+        <br><br>
+        
+        <!-- <input type="submit" onclick="return passwordCheck();" value="전송"> -->
+        <input type="submit" id="btnSubmit" value="전송">
+    </form>
+
+
+    <script>
+        function passwordCheck() {
+            let password1 = document.getElementById('password1').value;
+            let password2 = document.getElementById('password2').value;
+
+            if (password1 !== password2) {
+                alert('비밀번호가 일치하지 않습니다.');
+
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+    
+    <h4>2) 기본 이벤트 제거 3</h4>
+    <form>
+        <label for="userId">아이디 : </label>
+        <input type="text" name="userId" id="userId">
+
+        <p>
+            영문자, 숫자로만 총 5 ~ 12자 사이로 입력해 주세요.
+        </p>
+
+        <input type="submit" id="btnSubmit2" value="전송">
+    </form>
+
+
+
+    <script src="./07_이벤트.js"></script>
+</body>
+</html>
